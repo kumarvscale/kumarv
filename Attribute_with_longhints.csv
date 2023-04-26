@@ -1,205 +1,108 @@
 Attribute,LongHints,Reverse_GPT_Test
-aaiaBrandID,"A unique identifier that is assigned to a particular brand by the Automotive Aftermarket Industry Association.
-
--AaiaBrandID 106 corresponds to the brand ""ACDelco"".
--AaiaBrandID 329 corresponds to the brand ""Bosch"".
--AaiaBrandID 28 corresponds to the brand ""Denso"".
--AaiaBrandID 817 corresponds to the brand ""NGK"".",Pass
-academicInstitution,"An academic institution is an organization that provides educational opportunities, such as colleges and universities.
-
--University of California, Berkeley
--Harvard University
--Massachusetts Institute of Technology",Pass
-accessoriesIncluded,"An accessory is a small article or set of articles of personal adornment, as jewelry, or clothing, carried or worn with one's main article of clothing. 
-The attribute ""accessoriesIncluded"" would be used to list what accessories come with an article of clothing, like a belt, scarf, or cufflinks.",Fail
-action_figure_accessory_type,"An action figure accessory is a small toy or item that can be added to an action figure to enhance its play value. The most common accessory types are weapons, tools, and vehicles.
-
--Weapons: guns, knives, swords, etc.
--Tools: hammers, screwdrivers, wrenches, etc.
--Vehicles: cars, planes, boats, etc.",Fail
-action_figure_type,"An action figure is a toy designed to look like a human, animal, or mythical creature, and is often used as a hobby for children and adults to play with.
-
-Types of action figures can include: 
--Superheroes
--Star Wars characters
--Disney Princesses
--Barbie dolls",Fail
-activeIngredients,"-A substance that is the main ingredient of a mixture (such as a drug or cosmetic)
--Examples: aspirin, capsaicin, retinol",Fail
-activity,"-Actions that a person or thing performs: ""He wrote a book and he's very active in local politics.""
--The state or quality of being active: ""The active ingredient in the medicine.""
--The degree to which an account or user is used on a particular site: ""This user is more active on our competitors' site.""
--A page on a website that a user visits: ""The most active page on our site is the home page.""",Fail
-actors,"Actors are the people who play the roles in a piece of theater, movie, television show, or video game. 
-
--Meryl Streep 
--Tom Hanks 
--Leonardo DiCaprio 
--Jennifer Lawrence",Fail
-additionalBISACSubjectCodes,"A list of additional BISAC subject codes that are associated with a given product.
-
--BISAC codes are standardized codes that categorize books by subject matter.
--They are used to arrange books on shelves and to support search and discovery on retail and library websites.
-- additionalBISACSubjectCodes can be used to capture subjects that are not well represented by the main BISAC subject code.
--For example, a book about the history of the video game industry might have the main BISAC code of ""COMPUTERS / History"" but could also have additional BISAC codes of ""GAMES / Video & Electronic"" and ""SOCIAL SCIENCE / Popular Culture.""",Pass
-adhesive_form,adhesive_form: a category of adhesives distinguished according to the Lisbon classification system,Fail
-adhesive_tape_type,"- Adhesive tape, also known as sticky tape, is a type of pressure-sensitive tape used to adhere two surfaces together. 
-- The most common type of adhesive tape is Pressure-sensitive tape (PSA tape).
-- Other types of adhesive tape include: double-sided tape, masking tape, electrical tape, and duct tape.
-
-- Adhesive tapes are available in a variety of colors, widths, and lengths.
-- Adhesive tapes are made from a variety of materials, including: paper, plastic, metal, and fabric.",Fail
-advent_calendar_type,"An advent calendar is a type of calendar, often used to count down the days until Christmas.
-
--Chocolate Advent Calendar 
--Tea Advent Calendar 
--Wine Advent Calendar 
--Beer Advent Calendar 
--Beauty Advent Calendar 
--Cheese Advent Calendar",Fail
-aftershave_treatment_type,"An aftershave is a lotion, gel, balm, or other liquid that is applied to the skin after shaving. The main purpose of aftershave is to restore moisture to the skin and to soothe any irritation that may have been caused by the shaving process. Aftershaves are also often used to mask the scent of the shaving cream or soap that was used.
-
--Lotion
--Gel
--Balm
--Other liquid",Fail
-age_demographic,"The age_demographic attribute is used to identify the target age group of a product.
-
--For example, a product with an age_demographic of ""kids"" is intended for kids aged 5-12.
--A product with an age_demographic of ""teens"" is intended for teenagers aged 13-19. 
--A product with an age_demographic of ""adults"" is intended for adults aged 20 and up.",Pass
-age_restriction,"The age_restriction attribute is used to indicate the minimum age required to purchase or use a product.
-
--""This video game is rated M for Mature and has an age_restriction of 17+.""
--""You must be 21 years of age or older to purchase this product. age_restriction=21""
--""Due to the age_restriction of this movie, no one under the age of 13 will be admitted.""",Pass
-ageGroup,"The age group to which a product is marketed.
-
--A product may be marketed to children, teens, adults, or seniors.
--The age group may be determined by the product's content, themes, or targeting.
--Age group may also be referred to as ""target audience.""",Fail
-ageRangeUnit,"Unit of measure for age ranges, either years or months.
-
--For products marketed to children under the age of 2, age ranges are generally given in months.
--For all other products, age ranges are given in years.
--Some products may be appropriate for use outside of the stated age range.",Fail
-air_bed_type,"An air bed is an inflatable mattress, often used for camping or as a temporary bed.
-
--Intex Queen 22"" DuraBeam Standard Raised Pillow Rest Airbed Mattress with Built-in Pump
--Sable Air Mattress Queen Size Inflatable Bed with Built-in Pump
--Coleman SupportRest Double High Airbed",Fail
-airbrush_tanning_system_type,"A product's airbrush tanning system type specifies the type of airbrush system used to apply the tanning solution. The most common types of airbrush tanning systems are HVLP (high volume, low pressure) and LVLP (low volume, low pressure).
-
-Examples:
-- HVLP airbrush tanning systems use a compressor to generate a large volume of air at low pressure. This type of system is well-suited for applying tanning solutions evenly and smoothly.
-- LVLP airbrush tanning systems use a small, portable compressor to generate a small volume of air at low pressure. This type of system is well-suited for applying tanning solutions to small areas.",Fail
-allergens_not_contained,"-A product attribute that notes what allergens are not present in the product 
--This would be beneficial for those with severe allergies who need to avoid specific ingredients 
--For example, a product that is labeled ""allergens_not_contained: tree nuts"" would be safe for someone with a tree nut allergy to consume
-
-Attribute: low_sodium
-
--A product attribute that notes the amount of sodium present in the product
--This would be beneficial for those who need to limit their sodium intake for dietary or medical reasons
--For example, a product that is labeled ""low_sodium: 40 mg"" would be a low sodium product",Fail
-alphanumericCharacter,"An alphanumeric character is a character that is either a number or a letter.
+aaiaBrandID,"The aaiaBrandID is a unique identifier assigned to a vehicle brand by the Automotive Aftermarket Industry Association (AAIA).
 
 Examples:
 
--A
--4
--Z
--9
--G",Fail
-alternateTitle,"An alternate title is a title that can be used in place of the primary title. Examples of alternate titles arenicknames, shortened versions of the primary title, or alternative spellings.
+-Acura
+-Aston Martin
+-Audi
+-BMW
+-Buick
+-Cadillac
+-Chevrolet
+-Chrysler
+-Dodge
+-Ferrari
+-Ford
+-GMC
+-Honda
+-Hyundai
+-Infiniti
+-Jaguar
+-Jeep
+-Kia
+-Land Rover
+-Lexus
+-Lincoln
+-Maserati
+-Maybach
+-Mazda
+-Mercedes-Benz
+-Mini
+-Mitsubishi
+-Nissan
+-Pontiac
+-Porsche
+-Rolls-Royce
+-Saab
+-Scion
+-Smart
+-Subaru
+-Suzuki
+-Tesla
+-Toyota
+-Volkswagen
+-Volvo",Pass
+aaiaBrandID,"An aaiaBrandID is a unique identifier assigned to a specific brand by the Aftermarket Auto Parts Alliance, Inc. 
 
--Nicknames: ""Bob"" instead of ""Robert"" 
--Shortened versions of the primary title: ""Dr."" instead of ""Doctor,"" ""Prof."" instead of ""Professor"" 
--Alternative spellings: "" colour"" instead of ""color""",Pass
-americanWireGuage,"The American Wire Gauge (AWG) is a standardized system for measuring the diameter of non-ferrous, electrically conducting wire. 
--The AWG standard includes copper, aluminum and other electrical conducting wire. 
--Diameters of Electrical Wires by AWG Number. 
--The American Wire Gauge (AWG) is a standardized system for wire diameter.",Fail
-ammunition_case_and_holder_type,"Ammunition case and holder type refers to the type of case and holder that a particular ammunition is designed for. There are three main types of ammunition cases and holders: centerfire, rimfire, and shotgun. 
+-Duralast
+-Batteries
+-Brakes
+-Belts
+-Chassis
+- Climate Control
+-Clutches
+-Drive Shafts & Axles
+-Electrical
+-Engines
+-Exhaust
+-Filters
+-Fuel System
+-Heating & Cooling
+-Ignition
+-Lights
+-Motor Oil
+-Paint & Body
+-Power Steering
+- Starters & Alternators
+- Suspension
+-Transmission & Drive Train
+-Water Pumps",Pass
+aaiaBrandID,"An aaiaBrandID is a unique identifier assigned to a particular brand by the Automotive Aftermarket Industry Association (AAIA).
 
--Centerfire ammunition is designed for use in firearms that have the primer located in the center of the cartridge case. 
--Rimfire ammunition is designed for use in firearms that have the primer located on the rim of the cartridge case. 
--Shotgun ammunition is designed for use in firearms that have a smooth bore and fires shot instead of a single projectile.",Pass
-ammunitionType,"Ammunition type is an attribute of a firearm that indicates the type of ammunition the firearm is designed to use. Examples of ammunition types include:
--Pistol
--Rifle
--Shotgun
--Bolted",Fail
-amps,An amp (abbreviation for ampere) is the unit of electric current.,Fail
-animal_welfare_certifications,"Certifications related to the humane treatment of animals during farming and slaughter practices.
+-The identifier is used to track and manage data related to the brand.
+-The identifier can be used to look up information about the brand in the AAIA's database.
+-The identifier is assigned by the AAIA and is not transferable to another brand.",Pass
+aaiaBrandID,"Definition:
 
--Global Animal Partnership
--Animal Welfare Approved
--American Humane Association
--Certified Humane",Pass
-animal_welfare_claims,"An animal welfare claim is a statement made by a company about how its products were produced and the conditions in which the animals were raised. These claims can include things like "" cage-free,"" "" no antibiotics ever,"" and "" humanely raised.""
+The aaiaBrandID is a unique identifier assigned to a brand by the Automotive Aftermarket Industry Association (AAIA).
 
-Examples: 
-- ""Cage-free"": Chickens are raised in open barns or warehouses and are free to roam around. 
-- ""No antibiotics ever"": Animals raised for food never receive antibiotics, even when they are sick. 
-- ""Humanely raised"": Animals are raised in humane conditions with plenty of space to roam, access to food and water, and no harmful chemicals or treatments.",Pass
-animalBreed,"An animal's breed is its variety, or group, within its species. There are many breeds of animals, including dogs, cats, horses, and rabbits. Some examples of dog breeds are Golden Retrievers, Labrador Retrievers, and German Shepherds.",Fail
-animalHealthConcern,"The animal's overall health condition, which may be influenced by various factors such as age, diet, activity level, and underlying health problems.
+Values:
 
--The animal may have a low energy level.
--The animal may be more prone to infections.
--The animal may have difficulty digesting food.
--The animal may have joint pain.
--The animal may have skin problems.",Fail
-animalLifestage,"Animal lifestage is a term used to describe the stage of development an animal is in. This can be used to describe both wild and domestic animals.
+-The aaiaBrandID can be used to lookup information about the brand from the AAIA database.
 
--""Foal"" is used to describe a young horse or pony.
--A ""kitten"" is a young cat.
--A ""puppy"" is a young dog.",Fail
-animalType,"Animal type refers to the classification of animals into various types, such as mammals, reptiles, amphibians, birds, and fish. 
+-The aaiaBrandID is a 12 digit number.
 
--Mammals: Humans, monkeys, tigers, bears, etc. 
--Reptiles: Snakes, turtles, lizards, etc. 
--Amphibians: Frogs, toads, salamanders, etc. 
--Birds: Eagles, ducks, sparrows, etc. 
--Fish: Sharks, tuna, salmon, etc.",Fail
-applicator_type,"An applicator_type is the type of applicator used for a product. Applicator types can include sponge-tipped, doe-footed, brush-tipped, and more.
+-The aaiaBrandID is assigned by the AAIA.",Fail
+aaiaBrandID,"A numeric code assigned by the Aftermarket Auto Parts Alliance (AAIA) to identify a brand.
 
--Sponge-tipped: A sponge-tipped applicator is one that has a small, soft sponge on the end, designed for gentle application.
--Doe-footed: A doe-footed applicator is one that has a small, rounded end, designed for precisionapplication.
--Brush-tipped: A brush-tipped applicator is one that has a small, soft brush on the end, designed for smooth application.",Pass
-appointment_ruling,"An appointment_ruling is a decision handed down by an appointing authority regarding the appointment of an individual to a particular position.
-
--The board's appointment_ruling was that the candidate was not suited for the position.
-
--The court's appointment_ruling was that the appointment was valid and binding.",Pass
-apps_installed,"apps_installed: A list of apps installed on a device.
-
--The list of apps installed on a device can be used to target ads and recommendations.
--Installed apps can be used to track a user's location and activity.
--Data from installed apps can be used to personalize a user's experience.",Pass
-arcade_game_system_type,"An arcade game system type is a classification of video game console based on its hardware architecture.
-
--Arcade game system type examples include: Nintendo 64, Sega Saturn, PlayStation, and Xbox.",Fail
-arcade_pinball_machine_type,"An arcade pinball machine is a type of amusement machine that is typically found in commercial establishments such as bars, restaurants, and amusement parks. They are usually coin-operated and feature a number of buttons and levers that the player uses to control the game. Most machines also have a number of lights and sound effects that add to the excitement of the game.
-
- Examples:
-
--Bally Midway's ""The Addams Family""
--Stern Electronics' ""Star Trek""
--Data East's ""The Simpsons""
--Gottlieb's ""Cue Ball Wizard""",Fail
-arcade_video_game_machine_type,"A coin-operated video game machine typically found in public places such as arcades, bars, and restaurants.
-
--Skee-Ball
--Pac-Man
--Donkey Kong
--Asteroids
--Frogger",Fail
-archery_arrow_type,"Archery Arrow Type:
-
--A type of arrow designed specifically for archery.
--Common arrow types include: field tip, broadhead, and judo point.
--Field tip arrows are the most common and are designed for target practice.
--Broadhead arrows are designed for hunting and have a sharpened head for penetration.
--Judo point arrows are designed for competition and have a blunt head to minimize injury.",Fail
+-31: Acura
+-32: American Motors
+-33: Audi
+-34: BMW
+-35: Buick
+-36: Cadillac
+-37: Chevrolet
+-38: Chrysler
+-39: Daewoo
+-40: Daihatsu
+-41: Dodge
+-42: Eagle
+-43: Ford
+-44: GMC
+-45: Honda
+-46: Hyundai
+-47: Infiniti
+-48: Isuzu
+-49: Jaguar
+-50: Jeep",Fail
