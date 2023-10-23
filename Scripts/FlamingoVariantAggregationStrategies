@@ -1,0 +1,15 @@
+--List of queries below will be used to find meaningfull aggregations
+--grouping by title
+--select output_data:title::string as Title, count(DISTINCT(_ID)) as Grouped_Variants from scale_crawler.public.outputvariants where catalog_id='727758631405485'  group by 1
+--grouping by descrtption
+--select output_data:description::string as Description, count(DISTINCT(_ID)) as Grouped_Variants from scale_crawler.public.outputvariants where catalog_id='727758631405485'  group by 1
+--grouping by product_id
+--select output_data:product_id::string as Product_ID, count(DISTINCT(_ID)) as Grouped_Variants from scale_crawler.public.outputvariants where catalog_id='727758631405485'  group by 1
+--grouping by fb_product_id
+--select output_data:fb_product_id::string as FB_Product_ID, count(DISTINCT(_ID)) as Grouped_Variants from scale_crawler.public.outputvariants where catalog_id='727758631405485'  group by 1
+--grouping by item_group_id
+select output_data:item_group_id::string as Item_Group_ID, count(DISTINCT(_ID)) as Grouped_Variants from scale_crawler.public.outputvariants where catalog_id='727758631405485'  group by 1
+--grouping by size_chart_ids
+--select output_data:size_chart_ids::string as Size_Chart_IDs, count(DISTINCT(_ID)) as Grouped_Variants from scale_crawler.public.outputvariants where catalog_id='727758631405485'  group by 1
+--grouping by common images
+--grouping by sku YOUTHSHIRT-SNQ-BLACK-LG
