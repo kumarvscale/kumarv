@@ -1,0 +1,69 @@
+﻿Question,Instructions
+What is the current AUM managed by GA?,use book value fields (stat_fx_book_value_amount with b_as_of_date) for AUM
+How has Book Value changed between This month and last,"primary book value should be stat_fx_book_value_amount but useful to return market value , fourth and market value as secondary info"
+What was the average book yield at the end of 2022 for Ivy Assets,for ivy userisk owner like 'IVY%'
+How has the average book yield changed YTD by Asset class?,"where asset class is specified, use core_level1_code for higher level breakdown."
+What is the percentage breakdown of my portfolio by Asset Class,"for percent splits across the portfolio, typically use aum aka stat_fx_book_value"
+What have been the month by month changes in AUM since 2017? (not we only have accounting history since CW),for AUM use stat_fx_book_value primarily
+What is the notional of CMLs in the Carolina block,"for notional, assume stat_fx_book_value, where blocks are requested, use reinsurance deal code for the condition using the block name as the value"
+How many floater securities on SOFR indices?,"floaters, floating, fixed, variable terms equate to coupon type code."
+What is the USD book value of ou non USD assets?,"primary book value should be stat_fx_book_value_amount but useful to return market value , fourth and market value as secondary info"
+how has the market value of our Credit portfolio changed YTD?,"use core_level1_code to filter credit, worthwhile also brekaing down by core_level2 code. For ""changed"" compute the difference and %difference in totals between the two dates"
+what is our current book value by currency?,sum total stat_fx_book_Value group by currency_code
+How much exposure do we have to Rail Car assets?,"translate ""exposure"" as book value. To determine rail car assets filter on core levels containing Rail"
+what is the Yield Trend of our Airplane assets over past 3 years?,for trends translated as time series of book values. User core levels to filter those containing aviation
+What is our YTD Gain/Loss in the Resi sector?,"for sector = core_level1_code ontaining ""resi"""
+How much exposure do we have that is subject to BSCR?,"translate ""exposure"" as book value, for BSCR use asset_required_for_bs = Y"
+what is the book value of assets expiring in 2024?,"for expiring, expiry use maturity. As an asset query include the asset level context fields from ""considerations"" tab"
+What is the book value and average yield for all our FLIC assets?,"to determine FLIC assets use entity_short_name = 'FORELIFINS"" (FLIC = Forthought life insruance company)"
+Provide a breakdown of AUM by GL ledger code,by default use stat GL ledger code stat_general_ledger_grouping_code
+What is our exposure broken down by NAIC designation?,"translate ""exposure"" as book value, naic_designation_code for grouping"
+What are the top 10 deals by AUM?,"for AUM use stat_fx_book_value and reinsurance _deal_code for grouping, order by total stat book value desc and take first 10"
+Which deals have the best performing yield?,"compute weighted average stat_book_yield grouping by reinsurance deal code, exlcuding records with null yields, order descending and take a sample (eg 10)"
+What is the average duration by legal entity?,"group by legal entity code and return other entity context info in the results,"
+What is the YTD OAS Trend for credit products broken down by L2?,"computed weighted averga oas from jan 1 to date, corelevel1_code = 'Credit' and group by corelevel2"
+What is the open accrued balances by core level 1?,calculate total accrued balance grouping by core_level1_code
+how many distinct assets are rated by Egan Jones?,look for records where egan jones rating code is not null and not N/A. return distinct count at security key level (security_instrument_identifier)
+What is our current exposure to internal securitizations by core l1?,exposure = stat book value primarily. User Self Securitiized Flag to determine what is in scope and group by core level 1 code
+What is the trend of Book Value versus Book Yield in the past 5 years?,query total stat book value and weighted avgerage stat book yield over the full date range. Overlay line hcart for yield over bar chart for book value
+which positions have we lost money on in 2023?,"unrealized gain loss < 0 = ""lost money"","
+which portfolios contain cusip 000825AE9?,"from cusip infer ""security_instrument_identifier"", portfolios -> portfolio identifier,"
+what double AA assets do we own?,"double, triple, letters A - C and combinations should infer ratings. For ratings that are not specifiny agency use gafg average rating"
+what is the stat book value of the 144a positions we own by legal entity,"for determining 144a assets filter by sec_144a_flag, return portfolio level context information as well as the total book value"
+what is the change in AUM by Core Level 1 since feb 1st 2021?,"for AUM use stat_fx_book_value primarily, compute differences between start date and current date grouped by legal entity with entity context info included"
+how has the flic entity grown in AUM since 2014?,infer from FLIC to FORELIFINS as entity shortname
+What is our current exposure to Alternative assets?,use corelevel1 = Alternatives and compute total book value
+How has the portfolio changed since Q3 2022?,"find Q3 2022 end date, calculate book value total then and now and find the difference. Where the words ""the portfolio"" exists without qualifiers assume ""stat univers"""
+What is the average yield by sec type?,infer statbook yield and group by security_type_code
+What positions do we have for sec group CRE?,security_group_code_sm = CRE
+what is our unrealized gain and loss across all Ivy portfolios?,"cgaap2_base_net_unrealized_security_gain_loss_amount , risk_owner_name like 'Ivy%'"
+What asset class has the highest average wal?,"asset class == core level1 and core level 2, wal = stat_weighted_average_life_rate_number"
+How has zspread changed over the past year in the Credit portfolio?,"zpread = zero_volatility_spread_amount , credit portfolio => Core_level1_code = 'Credit'"
+What is the proportion of the portfolio by country?,"country_code, cal %age split by total stat_fx_book_value_amount"
+what are the top 10 issuers by book value?,"group by ultimate_issuer_name, sort by total stat_fx_book_value_amount desc and take first 10"
+what is the average issue amount for our loan assets?,"consider any core_level% field that contains ""Loan"" and average issue_amount"
+what is the aum breakdown by Middle Office Bucket?,"group by mo-bucket, total stat_fx_book_value_amount"
+what is the breakdown of assets under management by institional business?,"determine institutional business by block_flow_prt_code not null, grop by coreleve1_code to get breakdown of assets"
+What are the top 10 largest exposure by Ticker?,"group by ticker_code_sm, sort by total stat_fx_book_value_amount descending and return top 10"
+what is the break down of private assets by core L1 and L2?,total stat_fx_book_value_amount grouped bt core_levle1_code and core_level2_code
+what is the yield trend of the assets retroceded to 3rd parties in past 2 years?,"weighted average stat_book_yield where risk_owner_code != Global Atlantic, b_as_ofdate > current date - 2 years"
+,"risk owner like ""ivy%"", by how much have we allocated infer total book value that falls in this condition"
+,ambiguous trade assume asset level info required
+,ambiguous trade assume asset level info required
+,volume = sum quantity
+,"for unqualified yield, assume stat book yield, use date range for Q3 (7/1-9/30)"
+,look for commercial paper in core levels
+,look for RMBS in core levels
+,look for middle market in core levels when querying trades
+,"for unqualified yield assume stat book yield, order descending and return first as asset level with asset level context"
+,"infer fund as total net money, infer Q1 as date range"
+,distinct security count grouped by months across the date range
+,"GSAM, Himco, Guggenheim etc (values from asset_manager_name) should inder as asset_manager_name conditions"
+,"use trade_date to determine when a trade is effective, for notional calculate total net money"
+,"by ""proportional split"" infer percentage, for trade notional aggregate net money"
+,"strade count by security, portoflio grouped by currency code ( when a currency value is included in a question infer currency_code condition)"
+,sum quantity grouping by Sec type in the trade date range 1/1/22 = 12/31/22
+,sum quantity by grouping sec type for trade date range > 1/1/2023 sort by sec group desc and return first record
+,"group by corelevel1, computed weight avg on stat_weighted_average_life_rate_number for trades dates > 1/1/2023"
+,"weighted avg zspread by quantity, grouped my month where corelevel1_code = Credit"
+,"group by ticker_code_sm, sort by count(*) descending"
